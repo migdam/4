@@ -1,0 +1,6 @@
+name,role_expectation,location,email,technical_skills,soft_skills,work_mode
+John Doe,Python Developer,Warsaw,john.doe@example.com,"Python,Django,PostgreSQL","Communication,Teamwork",Remote
+Jane Smith,Frontend Developer,Krakow,jane.smith@example.com,"React,TypeScript,CSS","Problem Solving,Creativity",Hybrid
+Bob Johnson,DevOps Engineer,Remote,bob.johnson@example.com,"Kubernetes,Docker,AWS","Leadership,Communication",Remote
+Alice Williams,Data Scientist,Berlin,alice.williams@example.com,"Python,Machine Learning,TensorFlow","Analytical,Detail-oriented",Hybrid
+Charlie Brown,Full Stack Developer,London,charlie.brown@example.com,"JavaScript,Node.js,React,MongoDB","Teamwork,Adaptability",Onsite

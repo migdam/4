@@ -1,0 +1,30 @@
+# Core dependencies
+python-dotenv>=1.0.0
+pandas>=2.0.0
+python-dateutil>=2.8.2
+
+# LLM and AI
+langchain>=0.1.0
+langchain-openai>=0.0.5
+openai>=1.12.0
+
+# Web scraping (Bright Data will be accessed via MCP)
+aiohttp>=3.9.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Email
+sib-api-v3-sdk>=7.6.0
+
+# PDF Generation
+weasyprint>=60.0
+jinja2>=3.1.0
+Pillow>=10.0.0
+
+# CLI
+rich>=13.0.0
+click>=8.1.0
+
+# Utilities
+requests>=2.31.0
+asyncio>=3.4.3
