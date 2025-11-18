@@ -28,3 +28,8 @@ click>=8.1.0
 # Utilities
 requests>=2.31.0
 asyncio>=3.4.3
+
+# Enhancements - Additional dependencies for 50+ enhancements
+openpyxl>=3.1.0  # Excel export (Enhancement 27)
+cryptography>=41.0.0  # Encrypted credentials (Enhancement 37)
+sqlalchemy>=2.0.0  # Advanced database features

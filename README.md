@@ -27,6 +27,8 @@ An intelligent, cost-effective solution for automating job searches across multi
 
 ## ✨ Features
 
+> **🎉 NEW: 50 Enhancements Added!** See [ENHANCEMENTS.md](ENHANCEMENTS.md) for the complete list of advanced features including skill synonym matching, salary parsing, interactive reports, company research, career advice, A/B testing, webhooks, and much more!
+
 ### Core Functionality
 - **Multi-Board Job Search**: Aggregates jobs from LinkedIn, Indeed, Pracuj.pl, NoFluffJobs, JustJoin.it, and Bulldogjob
 - **Intelligent Grouping**: Automatically groups candidates with identical search criteria to minimize API calls
