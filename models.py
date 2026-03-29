@@ -4,6 +4,7 @@ Data models for AI JobMailer Agent
 from dataclasses import dataclass, field
 from typing import List, Optional
 from datetime import datetime
+import pandas as pd
 
 
 @dataclass
@@ -22,14 +23,14 @@ class Candidate:
         """Create a Candidate from a pandas DataFrame row"""
         # Parse comma-separated skills
         technical_skills = []
-        if 'technical_skills' in row and row['technical_skills']:
+        if 'technical_skills' in row and pd.notna(row['technical_skills']):
             technical_skills = [s.strip() for s in str(row['technical_skills']).split(',') if s.strip()]
 
         soft_skills = []
-        if 'soft_skills' in row and row['soft_skills']:
+        if 'soft_skills' in row and pd.notna(row['soft_skills']):
             soft_skills = [s.strip() for s in str(row['soft_skills']).split(',') if s.strip()]
 
-        work_mode = row.get('work_mode') if 'work_mode' in row else None
+        work_mode = row.get('work_mode') if ('work_mode' in row and pd.notna(row.get('work_mode'))) else None
 
         return cls(
             name=row['name'],

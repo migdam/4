@@ -300,7 +300,7 @@
                 <div class="meta-item">📍 {{ job.location }}</div>
                 <div class="meta-item">🏢 {{ job.source }}</div>
                 <div class="meta-item">
-                    <span class="badge {% if job.freshness_days <= 7 %}badge-fresh{% else %}badge-recent{% endif %}">
+                    <span class="badge {% if job.freshness_days is not none and job.freshness_days <= 7 %}badge-fresh{% else %}badge-recent{% endif %}">
                         {{ job.freshness_label }}
                     </span>
                 </div>

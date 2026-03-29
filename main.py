@@ -5,6 +5,7 @@ AI JobMailer Agent - Main Entry Point
 Automated job search and personalized email delivery system
 """
 import asyncio
+import copy
 import sys
 from pathlib import Path
 from collections import defaultdict
@@ -120,7 +121,7 @@ async def process_group(
     results = {}
     for candidate in group.candidates:
         candidate_jobs = scorer.score_and_filter_jobs(
-            jobs,
+            copy.deepcopy(jobs),
             candidate,
             min_score=20.0,  # Minimum 20% relevance
             max_results=50    # Top 50 jobs

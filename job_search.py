@@ -289,7 +289,7 @@ class JobScraper:
             r'application deadline passed'
         ]
 
-        combined_text = f"{job.title} {job.description}".lower()
+        combined_text = f"{job.title} {job.description or ''}".lower()
 
         for pattern in closed_patterns:
             if re.search(pattern, combined_text, re.IGNORECASE):

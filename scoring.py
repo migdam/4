@@ -84,8 +84,8 @@ class JobScorer:
             return max_points
 
         # Partial match (city names, etc.)
-        job_location_terms = set(job_location_lower.split(','))
-        candidate_location_terms = set(candidate_location_lower.split(','))
+        job_location_terms = set(t.strip() for t in job_location_lower.split(','))
+        candidate_location_terms = set(t.strip() for t in candidate_location_lower.split(','))
 
         common_terms = job_location_terms & candidate_location_terms
         if common_terms:
